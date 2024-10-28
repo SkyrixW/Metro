@@ -17,6 +17,7 @@ public class MyController {
 
     @GetMapping(path = "/users")
     public User getUserById(@PathVariable Long userId){
+
         return userService.getUserById(userId);
     }
 }
